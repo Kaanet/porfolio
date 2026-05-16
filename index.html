@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brian LY — 3D & VFX Artist</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Brian LY</a>
+  <ul class="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#gallery">Galerie</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="canvas3d"></canvas>
+  <div class="hero-content">
+    <p class="hero-tag">3D Artist · VFX · Modélisation</p>
+    <h1 class="hero-title">
+      Brian<span>LY</span>
+    </h1>
+    <p class="hero-sub">Vocation : VFX / Environment Artist / Animation 3D</p>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <p class="about-label">À propos</p>
+    <h2 class="about-title">G.Art 1<br>Brian LY</h2>
+    <p class="about-text">Une année à Gaming Campus pour explorer, tester, comprendre.<br><br>J'ai traversé plusieurs vocations — l'<span style="color:var(--white)">animation 3D</span>, le <span style="color:var(--white)">level art</span> — avant de trouver ce qui me définit vraiment. En dehors des cours, c'est le <span style="color:var(--white)">VFX</span> qui s'est imposé naturellement : une discipline que personne ne m'a enseignée, que j'ai cherchée par curiosité. C'est souvent là que naît la vraie passion.</p>
+  </div>
+  <div class="about-stats reveal" style="transition-delay: 0.2s">
+    <div class="stat-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+      <img src="assets/images/img_049.png" width="64" height="64" style="margin-bottom:12px;object-fit:contain;border-radius:8px;">
+      <div class="stat-label">Autodesk Maya</div>
+    </div>
+    <div class="stat-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+      <img src="assets/images/img_048.png" width="64" height="64" style="margin-bottom:12px;object-fit:contain;border-radius:8px;">
+      <div class="stat-label">Unreal Engine</div>
+    </div>
+    <div class="stat-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+      <img src="assets/images/img_047.png" width="64" height="64" style="margin-bottom:12px;object-fit:contain;border-radius:8px;">
+      <div class="stat-label">Substance Painter</div>
+    </div>
+    <div class="stat-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+      <img src="assets/images/img_046.png" width="64" height="64" style="margin-bottom:12px;object-fit:contain;border-radius:8px;">
+      <div class="stat-label">Photoshop</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Mes œuvres</h2>
+    </div>
+    <span class="section-count">11 projets</span>
+  </div>
+
+  <div class="sommaire-grid" id="sommaireGrid">
+    <!-- Généré par JS -->
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="contact-tag reveal">Contact</p>
+  <h2 class="contact-title reveal" style="transition-delay:0.1s">Travaillons<br><em>ensemble</em></h2>
+  <p class="contact-sub reveal" style="transition-delay:0.2s">Tu as un projet, une collaboration ou simplement envie d'échanger sur la 3D et le VFX ? Je suis ouvert à toute opportunité.</p>
+  <a href="mailto:bly@gaming.art" class="contact-email reveal" style="transition-delay:0.3s">bly@gaming.art</a>
+</section>
+
+<!-- PAGE DÉTAIL -->
+<div id="detail-page">
+  <div class="detail-nav">
+    <button class="detail-back" id="detailBack">← Retour</button>
+    <span class="detail-breadcrumb">Brian LY / <span id="detailBreadNum">Projet 01</span></span>
+  </div>
+  <div class="detail-hero">
+    <div class="detail-num" id="detailBigNum">01</div>
+    <div class="detail-header">
+      <div>
+        <h1 class="detail-title" id="detailTitle">Projet 01</h1>
+        <p class="detail-cat" id="detailCat">3D · Modélisation</p>
+      </div>
+      <div class="detail-meta">
+        <p class="detail-meta-label">Date</p>
+        <p class="detail-meta-val" id="detailDate">—</p>
+      </div>
+    </div>
+
+    <!-- Zone média : image, vidéo ou placeholder -->
+    <div class="detail-media" id="detailMedia">
+      <div class="detail-scan"></div>
+      <div class="detail-media-placeholder" id="detailMediaPlaceholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <path d="M21 15l-5-5L5 21"/>
+        </svg>
+        <p>Média à venir — image ou vidéo</p>
+      </div>
+    </div>
+
+    <div class="detail-body">
+      <div>
+        <p class="detail-desc-label">Description</p>
+        <p class="detail-desc-text" id="detailDesc">Ce projet est en cours de préparation. La description, les visuels et les détails techniques seront ajoutés prochainement.</p>
+      </div>
+      <div class="detail-sidebar">
+        <p class="detail-tags-label">Outils utilisés</p>
+        <div class="detail-tags" id="detailTags">
+          <span class="detail-tag">À définir</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-nav-projects">
+      <button class="detail-nav-btn" id="detailPrev">← Projet précédent</button>
+      <button class="detail-nav-btn" id="detailNext">Projet suivant →</button>
+    </div>
+  </div>
+</div>
+
+<!-- JEU GEOMETRY DASH CACHÉ -->
+<div id="gd-game" style="display:none;position:fixed;inset:0;z-index:500;background:#1a1a2e;flex-direction:column;align-items:center;justify-content:center;">
+  <div style="position:absolute;top:20px;right:20px;display:flex;gap:16px;align-items:center;">
+    <span id="gd-score" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;color:white;letter-spacing:0.1em;">0m</span>
+    <button id="gd-close" style="background:none;border:1px solid rgba(255,255,255,0.2);color:white;width:36px;height:36px;cursor:pointer;font-size:1rem;">✕</button>
+  </div>
+  <div style="position:absolute;top:20px;left:50%;transform:translateX(-50%);text-align:center;">
+    <p style="font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3);">Espace / Clic pour sauter</p>
+  </div>
+  <canvas id="gd-canvas" style="border:1px solid rgba(255,255,255,0.06);image-rendering:pixelated;"></canvas>
+  <div id="gd-dead" style="display:none;position:absolute;inset:0;background:rgba(0,0,0,0.85);flex-direction:column;align-items:center;justify-content:center;gap:0;">
+
+    <!-- Panneau principal -->
+    <div id="gd-panel-submit" style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+      <p style="font-family:'Syne',sans-serif;font-weight:800;font-size:2.5rem;color:white;margin:0;">GAME OVER</p>
+      <p id="gd-final" style="font-family:'DM Mono',monospace;font-size:0.9rem;color:rgba(255,255,255,0.5);letter-spacing:0.1em;margin:0;"></p>
+      <p style="font-family:'DM Mono',monospace;font-size:0.68rem;color:rgba(255,255,255,0.3);letter-spacing:0.12em;text-transform:uppercase;margin:8px 0 0;">Entrez votre nom pour le classement</p>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <input id="gd-name-input" type="text" maxlength="20" placeholder="Votre prénom..." style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);color:white;font-family:'DM Mono',monospace;font-size:0.8rem;padding:10px 16px;outline:none;width:200px;letter-spacing:0.06em;">
+        <button id="gd-submit-score" style="border:1px solid rgba(255,255,255,0.4);background:rgba(255,255,255,0.1);color:white;font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;padding:10px 20px;cursor:pointer;">Valider</button>
+      </div>
+      <button id="gd-skip" style="background:none;border:none;color:rgba(255,255,255,0.25);font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;cursor:pointer;text-decoration:underline;">Passer sans enregistrer</button>
+      <button id="gd-quit-submit" style="background:none;border:none;color:rgba(255,255,255,0.2);font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;cursor:pointer;">✕ Quitter le jeu</button>
+    </div>
+
+    <!-- Scoreboard -->
+    <div id="gd-panel-scores" style="display:none;flex-direction:column;align-items:center;gap:14px;width:100%;max-width:420px;">
+      <p style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:white;margin:0;">🏆 Classement</p>
+      <div id="gd-scores-list" style="width:100%;display:flex;flex-direction:column;gap:6px;max-height:220px;overflow-y:auto;"></div>
+      <div style="display:flex;gap:12px;margin-top:8px;">
+        <button id="gd-restart" style="border:1px solid rgba(255,255,255,0.3);background:none;color:white;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;padding:10px 24px;cursor:pointer;">Rejouer</button>
+        <button id="gd-back-submit" style="border:1px solid rgba(255,255,255,0.15);background:none;color:rgba(255,255,255,0.4);font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;padding:10px 24px;cursor:pointer;">← Retour</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- RÉSEAUX SOCIAUX -->
+<section id="social" style="padding:60px 48px;border-top:1px solid rgba(255,255,255,0.06);position:relative;z-index:1;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:32px;">
+    <p style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.28);">Retrouvez-moi sur</p>
+    <div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap;justify-content:center;">
+      <a href="https://www.instagram.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;opacity:0.7;transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+        <img src="assets/images/img_045.png" width="52" height="52" style="border-radius:12px;">
+        <span style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);">Instagram</span>
+      </a>
+      <a href="https://www.artstation.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;opacity:0.7;transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+        <img src="assets/images/img_044.png" width="52" height="52" style="border-radius:12px;">
+        <span style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);">ArtStation</span>
+      </a>
+      <a href="https://www.youtube.com/@BrianLY" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;opacity:0.7;transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+        <svg width="52" height="52" viewBox="0 0 52 52" style="border-radius:12px;"><rect width="52" height="52" rx="12" fill="#FF0000"/><polygon points="21,16 38,26 21,36" fill="white"/></svg>
+        <span style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);">YouTube</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Brian LY</span>
+  <span class="footer-copy">© 2026 — 3D & VFX Artist</span>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>
